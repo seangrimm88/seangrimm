@@ -1,12 +1,12 @@
 /* Reset some default browser styles */
 html, body, h1, h2, h3, p, ul, li {
+    font-family: Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 /* Set a background color and default font for the entire page */
 body {
-    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
@@ -62,14 +62,19 @@ footer {
     padding: 1rem;
 }
 
-/* Add your custom styles below */
+/* styles.css */
 
-/* Example: Style a class */
-/* .custom-class {
-    /* Add your styles here */
-/* } */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /* Vertically align content */
+}
 
-/* Example: Style an ID */
-/* #custom-id {
-    /* Add your styles here */
-/* } */
+p {
+    flex: 1; /* Allow the <p> to grow to take remaining space */
+    margin-right: 20px; /* Add some spacing between <p> and <img> */
+}
+
+img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+}
