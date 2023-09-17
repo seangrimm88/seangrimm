@@ -76,8 +76,23 @@ footer {
 
 .content {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center; /* Vertically align content */
+    align-items: flex-start; /* Vertically align content */
+	flex-wrap: wrap;
+}
+
+/* Style the text and image containers */
+.text {
+    flex: 1; /* Allow the text to grow and take available space */
+}
+
+.image {
+    margin-left: 20px; /* Add some spacing between text and image */
+}
+
+/* Optional: Add margin or padding to <p> for spacing */
+.text p {
+    margin: 0; /* Remove default margin for <p> */
+    padding: 10px; /* Add padding for spacing */
 }
 
 p {
