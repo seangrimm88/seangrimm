@@ -1,3 +1,4 @@
+
 /* Reset some default browser styles */
 html, body, h1, h2, h3, p, ul, li {
     font-family: Helvetica, sans-serif;
@@ -7,7 +8,10 @@ html, body, h1, h2, h3, p, ul, li {
 
 /* Set a background color and default font for the entire page */
 body {
-    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+	background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
     margin: 0;
@@ -16,10 +20,16 @@ body {
 
 /* Style the header */
 header {
-    background-color: #333;
-    color: #fff;
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	padding: 0.5rem;
+	background-color: #333;
+    color: #f4f4f4;
 	line-height: 1.6;
-    padding: 1rem;
+   
     text-align: center;
 }
 
@@ -37,17 +47,19 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #f4f4f4;;
 }
 
 /* Style main content sections */
 main {
-    max-width: 800px;
+    flex: 1;
+	max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
 }
 
 section {
+	margin-top: 80px;
     margin-bottom: 2rem;
 }
 
@@ -57,6 +69,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
+    flex-shrink: 0;
 }
 
 /* styles.css */
@@ -73,6 +86,6 @@ p {
 }
 
 img {
-  border-radius: 30%;
+	border-radius: 30%;
 }
 }
