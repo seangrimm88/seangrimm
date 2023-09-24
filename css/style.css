@@ -65,6 +65,30 @@ nav ul li a {
     color: var(--secondary-color);
 }
 
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        text-align: right;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    nav ul.show-mobile {
+        display: block;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    nav ul.show-mobile li {
+        display: block;
+        margin: 1rem 0;
+    }
+}
+
 main {
     flex: 1;
 	max-width: 80%;
