@@ -95,6 +95,11 @@ footer {
     padding: 10px; /* Add padding for spacing */
 }
 
+.link p {
+	margin: 0; /* Remove default margin for <p> */
+    padding: 10px; /* Add padding for spacing */
+}
+
 p {
     flex: 1; /* Allow the <p> to grow to take remaining space */
     margin-right: 20px; /* Add some spacing between <p> and <img> */
