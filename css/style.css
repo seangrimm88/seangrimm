@@ -5,9 +5,10 @@
 @import url("sections/contact.css");
 
 :root {
+    
+    --primary-color: #ececf9    ;
+    --secondary-color: #19194d;
 
-    --primary-color: #19194d    ;
-    --secondary-color: #ececf9;
   
     --black-200: #020202;
     --black-300: #333333;
