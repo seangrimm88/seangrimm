@@ -31,7 +31,7 @@ header {
 
 nav {
     width: 100%;
-    padding: 20px 0;
+    padding: 2vw;
     display: flex;
     justify-content: center;
     position: fixed;
@@ -47,10 +47,11 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap as needed */
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0 1vw;
 }
 
 /* Link styles, applied universally */
@@ -106,4 +107,17 @@ footer {
     text-align: center;
     padding: 0px 0;
     font-weight: bold; /* Makes the text bold */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    nav {
+        padding: 5px 0; /* Reduce padding */
+    }
+    nav ul li {
+        margin: 0 5px; /* Reduce margin */
+    }
+    nav ul li a {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
 }
