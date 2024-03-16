@@ -109,15 +109,19 @@ footer {
     font-weight: bold; /* Makes the text bold */
 }
 
-/* Media query for mobile devices */
-@media (max-width: 768px) {
+/* Media query for smaller devices */
+@media (max-width: 600px) {
     nav {
-        padding: 5px 0; /* Reduce padding */
+        padding: 10px 0; /* Reduced padding */
+    }
+    nav ul {
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center links vertically */
     }
     nav ul li {
-        margin: 0 5px; /* Reduce margin */
+        margin: 5px 0; /* Adjust margin for vertical layout */
     }
     nav ul li a {
-        font-size: 14px; /* Adjust font size for smaller screens */
+        font-size: 12px; /* Smaller font size */
     }
 }
