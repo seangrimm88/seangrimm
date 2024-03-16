@@ -78,8 +78,24 @@ main {
     padding: 75px; /* Add some padding */
 }
 
+.text {
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 60%; /* Adjust this value as needed to control the width and indirectly the margins */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
+.text, .image {
+    flex: 1; /* Each child will take equal space */
+    text-align: justify; /* Only affects text alignment, not the div itself */
+    padding: 20px; /* Optional: adds some space between the text and the image */
+}
 
 footer {
     width: 100%;
