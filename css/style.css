@@ -29,29 +29,23 @@ header {
     padding: 10px 0;
 }
 
-nav {
-    width: 100%;
-    padding: 2vw;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 0px; /* Adjust based on your header's height */
-    z-index: 100;
-    background-color: var(--background-color);
-}
-
-
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Allow items to wrap as needed */
+    flex-wrap: wrap; /* Allow items to wrap */
 }
 
 nav ul li {
-    margin: 0 1vw;
+    margin: 0 1vw; /* Use viewport width for responsive margins */
+}
+
+nav ul li a {
+    padding: 10px 15px; /* Adjustable based on your preference */
+    font-size: calc(1vw + 1vh + 0.5vmin); /* Responsive font size */
+    display: block; /* Ensure links use the full allocated space */
 }
 
 /* Link styles, applied universally */
@@ -110,18 +104,15 @@ footer {
 }
 
 /* Media query for smaller devices */
-@media (max-width: 600px) {
-    nav {
-        padding: 10px 0; /* Reduced padding */
-    }
-    nav ul {
-        flex-direction: column; /* Stack links vertically */
-        align-items: center; /* Center links vertically */
-    }
+@media (max-width: 768px) {
+    /* Adjustments for smaller screens */
     nav ul li {
-        margin: 5px 0; /* Adjust margin for vertical layout */
+        flex: 1 0 50%; /* Example: Allow wrapping at 50% of the container width */
+        text-align: center; /* Center-align the text for a cleaner look on mobile */
     }
+
     nav ul li a {
-        font-size: 12px; /* Smaller font size */
+        padding: 8px 10px; /* Smaller padding */
+        font-size: 4vw; /* Smaller font size */
     }
 }
